@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Gilroy";
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+#bubbhed{
+    background: linear-gradient(to right, #da1111 , #086444 60%);
+    opacity: 0.8;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Set text color to transparent */
+    font-size: 40px;
+    padding: 20px;
+    font-style: italic;
+    font-family:'Roboto', sans-serif;
+    border: 2px solid #fff;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 4px;
+    animation: bounce 2s linear infinite;
+    
+}
+
+/* Define the animation keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    /* Specify the CSS properties at different points in the animation */
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+#panel{
+    width: 90%;
+    height: 75%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 30px;
+  margin-left: 60px;
+  overflow: hidden;
+   }
+   #p-top{
+   
+    padding: 0px 30%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: #f4f3f3;
+    width: 100%;
+    height:50px;
+    background: linear-gradient(to left, #05a273, #f1e323);
+   }
+   .elem{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+ 
+    display: flex;
+   }
+   .elem h2{
+    font-weight: 
+    500;
+    font-size: 17px;
+   }
+   .box{
+    margin-right: 20px;
+   padding: 10px 20px;  color: darkmagenta;
+   font-weight: 600;
+   font-size: 25px;
+    background-color: #b2ebf8;
+    border-radius: 5px;
+
+   }
+   #p-bottom{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 10px);
+    background-color:  #e3d8cc;
+   }
+   .bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    font-size: 22px;
+    height: 60px;
+    background-color: #0c9cea;
+    color:white ;
+border-radius: 50%;
+border: 2px solid #211723;
+font-weight: 500;
+animation: scaleAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+   .bubble:hover{
+    background-color: #5c0eb4;
+    color: #fff;
+    cursor: pointer;
+   }
